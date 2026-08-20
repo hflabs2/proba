@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BladeMaster - Продукты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">BladeMaster</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="products.html" class="active">Продукты</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products-hero">
+            <h1>Наши Продукты</h1>
+            <p>Выберите идеальное решение для вашего бритья</p>
+        </section>
+
+        <section class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="razor-mockup small">
+                        <div class="razor-head"></div>
+                        <div class="razor-handle"></div>
+                    </div>
+                </div>
+                <h3>BladeMaster Start</h3>
+                <p class="product-desc">Идеально для начинающих</p>
+                <ul class="product-features">
+                    <li>3 лезвия</li>
+                    <li>Увлажняющая полоска</li>
+                    <li>Эргономичная ручка</li>
+                </ul>
+                <p class="price">299 ₽</p>
+                <button class="buy-button" onclick="addToCart('BladeMaster Start')">В корзину</button>
+            </div>
+
+            <div class="product-card featured">
+                <div class="badge">ХИТ ПРОДАЖ</div>
+                <div class="product-image">
+                    <div class="razor-mockup medium">
+                        <div class="razor-head"></div>
+                        <div class="razor-handle"></div>
+                    </div>
+                </div>
+                <h3>BladeMaster Pro</h3>
+                <p class="product-desc">Профессиональное качество</p>
+                <ul class="product-features">
+                    <li>5 лезвий премиум класса</li>
+                    <li>Гелевая полоска с алоэ</li>
+                    <li>Плавающая головка</li>
+                    <li>Защитный гребень</li>
+                </ul>
+                <p class="price">599 ₽</p>
+                <button class="buy-button" onclick="addToCart('BladeMaster Pro')">В корзину</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="razor-mockup large">
+                        <div class="razor-head"></div>
+                        <div class="razor-handle"></div>
+                    </div>
+                </div>
+                <h3>BladeMaster Elite</h3>
+                <p class="product-desc">Максимальный комфорт</p>
+                <ul class="product-features">
+                    <li>6 лезвий с титановым покрытием</li>
+                    <li>Премиальная гелевая полоска</li>
+                    <li>Подвижная головка 360°</li>
+                    <li>Дорожный футляр в комплекте</li>
+                </ul>
+                <p class="price">899 ₽</p>
+                <button class="buy-button" onclick="addToCart('BladeMaster Elite')">В корзину</button>
+            </div>
+        </section>
+
+        <section class="cart-notification" id="cartNotification">
+            <span id="cartMessage">Товар добавлен в корзину!</span>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BladeMaster. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
