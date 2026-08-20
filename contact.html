@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BladeMaster - Контакты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">BladeMaster</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="products.html">Продукты</a></li>
+                <li><a href="contact.html" class="active">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <h1>Свяжитесь с Нами</h1>
+            <p>Мы всегда рады ответить на ваши вопросы</p>
+        </section>
+
+        <section class="contact-container">
+            <div class="contact-info">
+                <h2>Наши Контакты</h2>
+                <div class="info-item">
+                    <span class="icon">📍</span>
+                    <div>
+                        <h3>Адрес</h3>
+                        <p>г. Москва, ул. Примерная, д. 123</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="icon">📞</span>
+                    <div>
+                        <h3>Телефон</h3>
+                        <p>+7 (999) 123-45-67</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="icon">✉️</span>
+                    <div>
+                        <h3>Email</h3>
+                        <p>info@blademaster.ru</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="icon">⏰</span>
+                    <div>
+                        <h3>Режим работы</h3>
+                        <p>Пн-Пт: 9:00 - 18:00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Напишите Нам</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" required placeholder="Иван Иванов">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="ivan@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Ваш вопрос..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Отправить</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <h2>Наш Офис на Карте</h2>
+            <div class="map-placeholder">
+                <p>🗺️ Интерактивная карта будет здесь</p>
+                <p class="map-note">Москва, ул. Примерная, д. 123</p>
+            </div>
+        </section>
+
+        <div class="form-notification" id="formNotification">
+            <span id="formMessage">Сообщение успешно отправлено!</span>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BladeMaster. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
